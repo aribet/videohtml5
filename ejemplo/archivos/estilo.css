@@ -1,0 +1,162 @@
+
+/*iconos*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?tqnyq8');
+	src:url('fonts/icomoon.eot?#iefixtqnyq8') format('embedded-opentype'),
+		url('fonts/icomoon.woff?tqnyq8') format('woff'),
+		url('fonts/icomoon.ttf?tqnyq8') format('truetype'),
+		url('fonts/icomoon.svg?tqnyq8#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*******/
+
+body {
+	font-family: tahoma, sans-serif;
+	margin: 1em auto 0;
+	background-color: #393939;
+}
+
+p {
+	text-align: center;
+}
+
+
+/*Video*/
+
+.contenedor-vid {
+	 position: relative; 
+}
+
+video {
+	margin: 0 15%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 70%;
+}
+
+video span {
+	font-size: 16px;
+	color: #333;
+}
+
+/*panel*/
+.panel {
+	position: absolute;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.1);
+	-moz-transition:width 0.2s ease;
+	-webkit-transition:width 0.2s ease;
+	-ms-transition:width 0.2s ease;
+    width: 75px;
+    overflow: hidden;
+}
+
+.panel .titulo{
+	background-color: rgba(70,70,70,0.3);
+	color:rgba(255,255,255,0.5);
+	font-size: 0.7em;
+	padding:10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.panel ul {
+	background-color: rgba(50,50,50,0.5);
+	margin: 0;
+	/*display: none;*/
+	overflow: hidden;
+	-moz-transition:height 0.2s ease;
+	-webkit-transition:height 0.2s ease;
+	-ms-transition:height 0.2s ease;
+	height: 0px;
+}
+
+.panel li{
+	background-color: rgba(90, 8, 8, 0.2);
+	border-radius: 5px;
+	border-top: 1px solid rgba(0,0,0,0.2);
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-bottom: 1px solid rgba(255,255,255,0.02);
+	color: #CCC;
+	display: block;
+	font-size: 0.7rem;
+	list-style: none;
+	margin: 5px;
+	padding: 7px 7px;
+	overflow: hidden;
+}
+.panel a:link {
+	text-decoration: none;
+}
+
+.panel li:hover {
+	color: #FFF;
+	background-color: rgb(90, 8, 8);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+
+/* menu */
+
+nav li {
+	cursor: pointer;
+}
+
+.icon-download:before {
+	content: "\f019";
+	margin-left: 5px;
+}
+
+.panel:hover {
+  -moz-transition:width 0.2s ease-in 0.05s;
+  -webkit-transition:width 0.2s ease 0.05s;
+  -ms-transition:width 0.2s ease 0.05s;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+    width: 227px;
+}
+
+.panel:hover ul {
+  -moz-transition:height  0.5s ease-in-out  0.2s;
+  -webkit-transition:height  0.5s ease  0.2s;
+  -ms-transition:height  0.5s ease  0.2s;
+	padding-left: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.panel:hover .descargas ul {
+	height: 40px;
+}
+
+.panel:hover nav ul {
+	height: 220px;
+}
+
+
+.panel:hover .titulo {
+	background-color: rgba(70,70,70,0.3);
+	color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
